@@ -11,15 +11,6 @@ cat /sys/firmware/efi/fw_platform_size
 read -p "Press Enter to continue"
 clear
 
-WIFI_NETWORK_SSID='MagentaWLAN-KTUA'
-echo 'iwctl will be started to connect to WIFI. Please enter the password for '$WIFI_NETWORK_SSID
-iwctl
-station wlan0 connect MagentaWLAN-KTUA
-exit
-
-read -p "Press Enter to continue"
-clear
-
 echo '\nCheck internet connection...'
 ping -c 5 google.com
 
